@@ -1,1 +1,3 @@
-console.log('testing');
+import initalLoad from "./loadpage.js";
+
+initalLoad()
