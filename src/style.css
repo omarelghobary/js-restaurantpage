@@ -1,9 +1,98 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    background-image: linear-gradient(120deg, #3E5151 , #DECBA4);
 
+}
+
+#content {
+    margin: 25px auto;
+    text-align: center;
+    height: auto;
+
+}
 .page-content {
-    border: 5px solid rgb(16, 63, 174);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
+    
+.tab {
+    color: #f8eeda;
+    background-color: #313838;
+    display: inline;
+    margin: 0 40px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid black ;
+}
+
+/* Styles of the restaurant page */
+img {
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    color: #f8eeda;
+}
+
+p {
+    width: 600px;
+    margin: 30px 0;
+    font-size: 18px;
+    padding: 2rem;
+    background-color: #3E5151;
+    border-radius: 10px;
+}
+
+img, p, h1 {
+    color: #f8eeda;
+}
+
+ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #cfcdc9;
+    font-size: 1.3rem;
+}
+
+.contant-form {
+    align-content: flex-start;
+}
+
+input {
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+input[type='text'] {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+input[type ='submit']{
+    width: 20%;
+    padding: 10px 10px;
+    margin-top: 10px;
+
+} 
+
