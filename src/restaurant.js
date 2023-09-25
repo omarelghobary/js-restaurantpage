@@ -1,5 +1,5 @@
 import './style.css';
-import Image from './image.jpg';
+import Image from './mainPizza.jpg';
 
 export default  function createRestaurantHomePage (){
     const content = document.querySelector('#content');
@@ -9,9 +9,9 @@ export default  function createRestaurantHomePage (){
     //Create and append image element
     const image = document.createElement('img');
     image.src = Image;
-    image.height = '500';
+    image.height = '600';
     pageContent.appendChild(image);
-
+ 
     //Create and append the headline element
     const headline = document.createElement('h1'); 
     headline.textContent = 'Welcome to Pizza Elghobary';

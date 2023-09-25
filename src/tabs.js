@@ -8,44 +8,55 @@ import createRestaurantHomePage from "./restaurant";
      const content = document.querySelector('#content')
 
      //Create three divs for the tabs
-     const div1 = document.createElement('div');
-     const div2 = document.createElement('div');
-     const div3  = document.createElement('div');
+     const home = document.createElement('div');
+     const menu = document.createElement('div');
+     const contact  = document.createElement('div');
 
-     // Set IDs for the divs for styling purposes
-     div1.setAttribute('id','home-btn');
-     div2.setAttribute('id','menu-btn');
-     div3.setAttribute('id','contact-btn');
+     // Set IDs for the divs 
+     home.setAttribute('id','home-btn');
+     menu.setAttribute('id','menu-btn');
+     contact.setAttribute('id','contact-btn');
 
      // Set classes for the divs
-     div1.classList.add('tab');
-     div2.classList.add('tab');
-     div3.classList.add('tab');
+     home.classList.add('tab');
+     menu.classList.add('tab');
+     contact.classList.add('tab');
     
      // Set texts for the divs
-     div1.textContent = 'Home';
-     div2.textContent = 'Menu';
-     div3.textContent = 'Contact';
+     home.textContent = 'Home';
+     menu.textContent = 'Menu';
+     contact.textContent = 'Contact';
      
      //Append the divs to the content div
-     content.appendChild(div1);
-     content.appendChild(div2);
-     content.appendChild(div3);
+     content.appendChild(home);
+     content.appendChild(menu);
+     content.appendChild(contact);
 
 
-     div1.addEventListener('click', () =>{
+     home.addEventListener('click', () =>{
+        clearContent();
         createRestaurantHomePage();
      });
 
-     div2.addEventListener('click', () =>{
+     menu.addEventListener('click', () =>{
+        clearContent();
         createMenuPage();
      });
 
-     div3.addEventListener('click', () =>{
+     contact.addEventListener('click', () =>{
+        clearContent()
         createContactPage();
      });
      
-     
+
+ }
+
+ function clearContent() {
+      const content = document.querySelector('#content');
+      const pageContent = document.querySelector('.page-content');
+      if(pageContent) {
+         content.removeChild(pageContent);
+      }
 
  }
 
