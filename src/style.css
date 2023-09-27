@@ -65,6 +65,7 @@ img, p, h1 {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction:column;
     justify-content: center;
     align-items: center;
@@ -95,4 +96,8 @@ input[type ='submit']{
     margin-top: 10px;
 
 } 
+
+#tabs-container {
+    margin-bottom: 9rem;
+}
 
